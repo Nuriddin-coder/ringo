@@ -1,0 +1,98 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.header__link {
+  color: #282b22;
+
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.header_contact {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header_contact__num {
+  font-family: "Lato", sans-serif;
+  padding-left: 55px;
+
+  color: #3d4a39;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    background-image: url("../../img/phone_header.svg");
+    padding-right: 8px;
+  }
+}
+
+.header_contact__inst {
+  padding-right: 15px;
+}
+
+.header_contact__menu {
+  padding-top: 5px;
+  padding-left: 50px;
+  display: none;
+}
+
+.header__menu {
+  margin-top: 20px;
+  position: absolute;
+}
+
+///---------- Responsive ----------------------/////
+
+@media screen and (max-width: 1000px) {
+  .header__list {
+    display: none;
+  }
+  .header_contact__menu {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header_contact__inst {
+    display: none;
+  }
+
+  .header_contact__facebook {
+    display: none;
+  }
+
+  .header_contact__num {
+    display: none;
+  }
+
+  .header__logo {
+    display: inline-block;
+    max-width: 100px;
+  }
+}
+
+

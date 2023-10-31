@@ -1,0 +1,31 @@
+.cover {
+  padding: 100px 0;
+  background-color: #3d4a39;
+}
+
+.cover__title {
+  @include main_title;
+  padding-bottom: 70px;
+}
+
+.cover_cards__item p {
+  color: #9EA59C;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.cover_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 70px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 578px) {
+    .cover_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
